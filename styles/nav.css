@@ -1,0 +1,27 @@
+nav{
+    margin: 0 20%;
+}
+.top-nav{
+    background-color: #089D49;
+    height: 40px;
+}
+.top-nav a{
+    color: white;
+    float: right;
+    margin: 10px 0 0 20px;  
+    
+}
+.top-nav a:hover{
+    text-decoration: 2px underline;
+}
+.logo{
+    height: 60px;
+    width: 140px;
+}
+.main-nav{
+    height: 92px;
+    background-color: antiquewhite;
+}
+.main-nav>nav{
+    display: flex;
+}
