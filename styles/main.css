@@ -99,9 +99,68 @@
     height: 208px;
     margin: 20px 50px ;
 }
-
-
-
+/* ---------------------------
+    shohoz app section 
+---------------------- */
+.shohoz-apps{
+    height: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+}
+.links-app{
+    margin-top: 100px;
+    width:100%;
+    animation-name: applink;
+    animation-duration: 3s;
+    background-color: #F6F9FF;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171) ;
+    border-radius: 5px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+.link-apps{
+    padding-right: 20px;
+}
+.link-apps h1{
+    font-size: 34px ;
+    margin: 30px 0;
+}
+.link-apps p{
+    font-size: 16px;
+    margin: 30px 0;
+}
+@keyframes applink {
+    from {
+      margin-left: -400px;
+      width: 100%;
+    }
+  
+    to {
+      margin-left: 1px;
+      width: 100%;
+    }
+  }
+.right-img{
+    width: 40%;
+    animation-name: appimg;
+    animation-duration: 3s;
+    padding-top: 30px;
+}
+@keyframes appimg {
+    from {
+      margin-top: 400px;
+      width: 40%;
+    }
+  
+    to {
+      margin-bottom: 1px;
+      width: 40%;
+    }
+  }
 
 /*------------
  media qury 
@@ -148,4 +207,24 @@
         height: 302px;
         
     }
+    .shohoz-apps{
+        grid-template-columns: 1fr;
+    }
+    .right-img{
+        width: 100%;
+    }
+    @keyframes appimg {
+        from {
+          margin-top: 400px;
+          width: 100%;
+        }
+      
+        to {
+          margin-bottom: 1px;
+          width: 100%;
+        }
+      }
+    .link-apps{
+        padding: 20px;
+    }  
 }
