@@ -2,4 +2,150 @@
     margin: 0;
     padding: 0;
     text-decoration: none;  
+    font-family: Helvetica, sans-serif;
+}
+
+/* ------------------
+    hero section 
+-------------------- */
+.heros{
+    display: flex;
+    justify-content: center;
+}
+.heros img{
+    width: 1450px;
+    z-index: 2;
+
+}
+
+/* ----------------
+    hero pormotion 
+----------------- */
+.hero-pros{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #089D49;
+    height: 110px;
+    
+}
+.h-p-box{
+   margin: 0 5%;
+   color: white;
+}
+.h-p-box h1{
+    font-size: 36px;   
+}
+.h-p-box p{
+    font-size: 16px;
+}
+
+/*----------------
+     service section 
+----------------- */
+.s-service{
+    height: 70vh;
+    background: #F6F9FF;
+}
+.service-titles{
+    text-align: center;
+    padding: 5% 0;
+}
+.service-titles h1{
+    font-size: 36px;
+}
+.service-titles p{
+    font-size: 22px;
+    padding-top: 50px;
+    color: rgba(0, 0, 0, 0.575);
+    font-weight: 600;
+}
+.service-boxs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.s-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 20px;
+}
+.s-box a{
+    background-color: #089D49;
+    padding: 10px 40px;
+    position: relative;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    margin: 0 80px;
+    bottom: 20px;
+    font-size: 14px;
+}
+
+/*----------------------------
+     we got  covered section
+---------------------------- */
+.cover-items{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.cover-item{
+    width: 170px;
+    height: 208px;
+    margin: 20px 50px ;
+}
+
+
+
+
+/*------------
+ media qury 
+----------- */
+@media screen and (max-width:576px) {
+    .heros{
+        background-image: url(https://www.shohoz.com/v2/assets/web_top_banner_1140x460.svg);
+        background-repeat: no-repeat;
+        background-size:800px;
+        background-position-x: center;
+        background-position-y: center;
+        height: 550px;
+        overflow: hidden;
+    }
+    .heros img{
+       display: none;
+    }
+    .h-p-box h1{
+        font-size: 20px; 
+        font-weight:800;  
+    }
+    .h-p-box p{
+        font-size: 12px;
+    }
+    .hero-pros{
+        margin-top: -115px;
+    }
+    .h-p-box{
+        margin: 0 3%;
+        color: white;
+        
+     }
+    .service-titles h1{
+        font-size: 20px;
+    }
+    .service-titles p{
+        font-size: 18px;
+    }
+    .we-cover{
+        margin-top: 300px;
+    }
+    .cover-item{
+        width: 274px;
+        height: 302px;
+        
+    }
 }

@@ -1,8 +1,13 @@
 nav{
     margin: 0 20%;
 }
+
 .headers{
     box-shadow: 0 2px 10px lightblue;
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 .top-manu{
     float: right;
@@ -14,6 +19,7 @@ nav{
 .top-nav a{
     color: white;
     line-height: 43px;
+    margin-left: 20px;
 }
 .top-nav a:hover{
     text-decoration: 2px underline;
@@ -35,17 +41,18 @@ nav{
 .nav-menu{
     display: flex;
     align-items: center;
-    grid-column: span 8;
-    grid-gap: 50px;
+    grid-column: span 10;
+    
 }
 .nav-menu a{
-    padding:10px 20px ;
+    padding:10px 15px ;
     border-radius: 5px;
+    color: black;
 }
 .nav-menu a:hover{
     color: white;
     background-color: #089D49;
-    padding: 10px 20px;
+    padding: 10px 15px;
 }
 .nav-menu i{
     padding-right: 5px;
@@ -64,6 +71,7 @@ nav{
 
 
 @media screen and (max-width:576px) {
+
     .nav{
         margin: 0px 0px;
     }
@@ -80,7 +88,7 @@ nav{
     #fa-bars{
         display: inline;
         line-height: 60px;
-        margin-right: 10px;
+        margin-right: 20px;
         color: #089D49;
         font-size: 1.5em;
     }
@@ -93,7 +101,7 @@ nav{
         
     }
     .main-nav{
-        grid-template-columns: repeat(6,1fr);
+        grid-template-columns: repeat(12,1fr);
         height: 60px;
     }
     .en-bn, .main-nav a{
@@ -105,7 +113,7 @@ nav{
     .logo{
         height: 60px;
         width:100px;
-        grid-column: span 5;
+        grid-column: span 11;
         margin-left: 10px;
 
     }
@@ -113,6 +121,6 @@ nav{
         line-height: 60px;
     }
     .top-nav {
-      margin-left: -80px;
+      margin-left: -110px;
     }
 }
