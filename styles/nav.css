@@ -1,27 +1,118 @@
 nav{
     margin: 0 20%;
 }
+.headers{
+    box-shadow: 0 2px 10px lightblue;
+}
+.top-manu{
+    float: right;
+}
 .top-nav{
     background-color: #089D49;
-    height: 40px;
+    height: 45px;
 }
 .top-nav a{
     color: white;
-    float: right;
-    margin: 10px 0 0 20px;  
-    
+    line-height: 43px;
 }
 .top-nav a:hover{
     text-decoration: 2px underline;
 }
+
+.main-nav{
+    display: grid;
+    grid-template-columns: repeat(14,1fr);
+    height: 92px;
+    color: black;
+}
+
 .logo{
     height: 60px;
     width: 140px;
+    grid-column: span 3;
+    margin-top: 15px;
 }
-.main-nav{
-    height: 92px;
-    background-color: antiquewhite;
-}
-.main-nav>nav{
+.nav-menu{
     display: flex;
+    align-items: center;
+    grid-column: span 8;
+    grid-gap: 50px;
+}
+.nav-menu a{
+    padding:10px 20px ;
+    border-radius: 5px;
+}
+.nav-menu a:hover{
+    color: white;
+    background-color: #089D49;
+    padding: 10px 20px;
+}
+.nav-menu i{
+    padding-right: 5px;
+}
+.en-bn{
+    line-height: 92px;
+}
+.en-bn a{
+    margin-left: 5px;
+}
+#fa-bars{
+    display: none;
+    line-height: 92px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width:576px) {
+    .nav{
+        margin: 0px 0px;
+    }
+    .top-manu{
+        float: left;
+    }
+    .nav-menu{
+        height: 60px;
+        display: none;
+    }
+    .en-bn{
+        display: flex;
+    }
+    #fa-bars{
+        display: inline;
+        line-height: 60px;
+        margin-right: 10px;
+        color: #089D49;
+        font-size: 1.5em;
+    }
+    
+    .top-nav a{
+        padding-bottom: 10px;
+        padding-left: 10px;
+        font-size: 13px;
+        font-family: Helvetica, sans-serif;
+        
+    }
+    .main-nav{
+        grid-template-columns: repeat(6,1fr);
+        height: 60px;
+    }
+    .en-bn, .main-nav a{
+        font-size: 16px;
+        font-weight: bold;
+        font-family: Helvetica, sans-serif;
+    }
+
+    .logo{
+        height: 60px;
+        width:100px;
+        grid-column: span 5;
+        margin-left: 10px;
+
+    }
+    .lh40{
+        line-height: 60px;
+    }
+    .top-nav {
+      margin-left: -80px;
+    }
 }
