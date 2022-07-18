@@ -112,7 +112,7 @@
     margin-top: 100px;
     width:100%;
     animation-name: applink;
-    animation-duration: 3s;
+    animation-duration: 5s;
     background-color: #F6F9FF;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.171) ;
     border-radius: 5px;
@@ -147,7 +147,7 @@
 .right-img{
     width: 40%;
     animation-name: appimg;
-    animation-duration: 3s;
+    animation-duration: 5s;
     padding-top: 30px;
 }
 @keyframes appimg {
