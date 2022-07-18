@@ -161,6 +161,67 @@
       width: 40%;
     }
   }
+/*-----------------------------------
+    highilights section 
+ ---------------------------- */
+ .highlights{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+.highlights-news{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.news{
+    width: 46%;
+    padding: 10px;
+}
+.news h2{
+    background-color: #089D49;
+    height: 5%;
+    margin-top: -7px;
+    padding: 20px;
+    color: #F6F9FF;
+}
+#news-img{
+    width: 100%;
+}
+.news1{
+    width: 32%;
+}
+.news2{
+    width: 60%;
+}
+.news4{
+    margin-top: -75px;
+}
+.news1 h2 , .news2 h2{
+    height: 100px;
+}
+
+.news a{
+    position: relative;
+    background-color: #089D49;
+    color: #F6F9FF;
+    padding: 8px 10px;
+    border-radius: 5px;
+    left: 80%;
+    top: 40px;
+}
+
+/* this for reserved ara on grid  */
+.news-ds-none{
+    visibility: hidden;
+}
+
+
+
+
+
 
 /*------------
  media qury 
@@ -227,4 +288,18 @@
     .link-apps{
         padding: 20px;
     }  
+
+    .news{
+        width: 100%;
+    }
+    .highlights-news{
+        width: 100%;
+        margin-top: 400px;
+    }
+    .news4{
+        margin-top: 1px;
+    }
+    .news-ds-none{
+        display: none;
+    }
 }
