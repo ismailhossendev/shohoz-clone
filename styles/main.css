@@ -244,7 +244,7 @@
 /*------------
  media qury 
 ----------- */
-@media screen and (max-width:576px) {
+@media only screen and (max-width:576px) {
     .heros{
         background-image: url(https://www.shohoz.com/v2/assets/web_top_banner_1140x460.svg);
         background-repeat: no-repeat;
@@ -318,6 +318,12 @@
         margin-top: 1px;
     }
     .news-ds-none{
+        display: none;
+    }
+    .f-img{
+        display: flex;
+    }
+    .dn{
         display: none;
     }
 }

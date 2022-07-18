@@ -19,7 +19,7 @@ nav{
 .top-nav a{
     color: white;
     line-height: 43px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .top-nav a:hover{
     text-decoration: 2px underline;
@@ -36,7 +36,7 @@ nav{
     height: 60px;
     width: 140px;
     grid-column: span 3;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 .nav-menu{
     display: flex;
@@ -70,7 +70,7 @@ nav{
 }
 
 
-@media screen and (max-width:576px) {
+@media only screen and (max-width:576px) {
 
     .nav{
         margin: 0px 0px;
